@@ -25,7 +25,7 @@ test('delete', () => {
   let d = delet("5", info);
   expect(d.isValid).toBeTruthy();
   expect(d.msg).toEqual("Cadastro deletado com sucesso");
-  expect(search("5", info, true).isValid).toBeFalsy();
+  expect(info).toEqual([]);
 });
 
 
